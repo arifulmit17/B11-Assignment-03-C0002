@@ -29,10 +29,10 @@
     </style>
 </head>
 <body class="sora-normal">
-    <header class="bg-gradient-to-b from-white to bg-[#EFEBE3]">
+    <header class="bg-gradient-to-b from-white to bg-[#c7e2d3]">
         <!-- navbar section -->
-        <nav>
-            <div class="navbar bg-base-100">
+        <nav class="border flex justify-between items-center lg:border-none border-[#179800]">
+            <div class="navbar  bg-base-100">
                 <div class="navbar-start">
                   <div class="dropdown">
                     <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -55,7 +55,10 @@
                       <li><a class="text-xl font-normal">Contact us</a></li>
                   </ul>
                 </div>
-                <div class="navbar-end flex justify-evenly">
+                
+                
+                <div class="navbar-end hidden  lg:flex justify-evenly">
+                    
                     <i class="fa-solid fa-magnifying-glass"></i>
                     <img class="size-10" src="./c2-assets/empty-cart.png" alt="">
                       
@@ -64,24 +67,27 @@
                   
                 </div>
               </div>
+              <div class="block lg:hidden bg-white mr-5">
+                <i class=" fa-solid fa-bars" style="color: #179800;"></i>
+            </div>
         </nav>
         <!-- banner section -->
-         <div class="lg:container mt-24 mx-auto ">
+         <div class=" lg:container mt-24 mx-auto ">
             <!-- text section -->
             <div class="text-center flex flex-col items-center border border-blue-500">
-                <h1 class="font-semibold  text-[56px]">Freshness <span class="text-green-600">You Can <br>
+                <h1 class="font-semibold text-[32px] lg:text-[56px] mx-10">Freshness <span class="text-green-600">You Can <br>
                     Count</span>  On, Prices You’ll Love!</h1>
-                <p class="text-xl font-normal w-2/3">Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!</p>
+                <p class="text-base lg:text-xl font-light lg:font-normal w-full mt-4 px-10 lg:w-2/3">Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!</p>
             </div>
             <!-- image section -->
-            <div>
-                <img class=" mx-auto border border-dashed border-gray-400" src="./c2-assets/hero-vegetables.png" alt="">
+            <div class="h-[450px] lg:h-[800px] lg:w-[1030px] lg:border border-dashed border-gray-400 lg:mx-auto bg-cover bg-center bg-[url('./c2-assets/hero-vegetables.png')]">
+                <!-- <img class="hidden mx-auto max-w-full border border-dashed border-gray-400" src="./c2-assets/hero-vegetables.png" alt=""> -->
             </div>
          </div>
     </header>
     <main>
         <!-- services section -->
-         <section class="container  mt-[140px] mx-auto ">
+         <section class=" hidden container  mt-[140px] mx-auto ">
             <div class="">
                 <h1 class="font-semibold text-4xl text-left text-[#179800]">Services</h1>
                 <!-- cards  -->
@@ -136,15 +142,15 @@
          </section>
          
         <!-- popular products -->
-         <section>
-            <div class=" border border-violet-900 p-[140px] mt-[140px] bg-[#EFEBE3]">
+         <section class="hidden">
+            <div class=" border border-violet-900 p-[100px] mt-[140px] bg-[#EFEBE3]">
                 <h1 class="font-semibold text-4xl text-left text-[#179800]">Popular Products</h1>
                 <!-- product cards -->
                 <div class=" border border-red-900 mt-12  grid grid-cols-3 gap-6">
                     <!-- offer card -->
                      
                      
-                     <div class="relative h-1/2 w-[400px] bg-gradient-to-br from-green-600 to-white">
+                     <div class="relative h-1/2 bg-gradient-to-br from-green-600 to-white">
                         <!-- text -->
                          <div class="border border-black mt-16 space-y-5">
                             <h1 class="text-white font-bold text-5xl">30% off</h1>
@@ -153,16 +159,51 @@
                          </div>
                         
                         <!-- image -->
-                        <img class=" top-28 bottom-0 right-0 h-16 w-16 ml-28 mb-6 border border-black" src="./c2-assets/vegetable-offer.png" alt="">
+                        <img class=" -top-[300px] z-10 bottom-0 right-0 h-[230px] w-[230px] ml-28 mb-6 border border-black" src="./c2-assets/vegetable-offer.png" alt="">
                         
                      </div>
                      <!-- products -->
                       <div class="w-full border col-span-2 border-violet-900">
                         <!-- cards -->
-                        <div class="grid grid-cols-2 lg:grid-cols-3">
+                        <div class="grid grid-cols-2 lg:grid-cols-3 gap-6">
                             <!-- card 1 -->
                              
                                 <div class="w-full h-[120px] card flex  items-center card-side border border-red-900 bg-base-100 shadow-xl">
+                                    <figure class="size-[86px] bg-slate-200 rounded-[10px] ml-4">
+                                      <img class="size-[70px]  bg-slate-200 border border-dashed border-gray-500 p-3 "
+                                        src="./c2-assets/image 43.png"
+                                        alt="Onion" />
+                                    </figure>
+                                    <div class="card-body flex flex-col gap-2">
+                                        <div class="flex gap-1">
+                                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                            <h4 class="font-normal text-base">4.5</h4>
+                                        </div>
+                                      <h2 class="text-xl font-medium">Onion 1 KG</h2>
+                                      <h4 class="text-base font-medium">$39.99</h4>
+                                    
+                                      </div>
+                                    </div>
+                                  
+                            <!-- other -->
+                            <div class="w-full h-[120px] card flex  items-center card-side border border-red-900 bg-base-100 shadow-xl">
+                                <figure class="size-[86px] bg-slate-200 rounded-[10px] ml-4">
+                                  <img class="size-[70px]  bg-slate-200 border border-dashed border-gray-500 p-3 "
+                                    src="./c2-assets/image 43.png"
+                                    alt="Onion" />
+                                </figure>
+                                <div class="card-body flex flex-col">
+                                    <div class="flex gap-1">
+                                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                        <h4 class="font-normal text-base">4.5</h4>
+                                    </div>
+                                  <h2 class="text-xl font-medium">Onion 1 KG</h2>
+                                  <h4 class="text-base font-medium">$39.99</h4>
+                                
+                                  </div>
+                                </div>
+                                <!--  -->
+                            <div class="w-full h-[120px] card flex  items-center card-side border border-red-900 bg-base-100 shadow-xl">
                                     <figure class="size-[86px] bg-slate-200 rounded-[10px] ml-4">
                                       <img class="size-[70px]  bg-slate-200 border border-dashed border-gray-500 p-3 "
                                         src="./c2-assets/image 43.png"
@@ -177,20 +218,119 @@
                                       <h4 class="text-base font-medium">$39.99</h4>
                                     
                                       </div>
+                                </div>
+                                <!--  -->
+                            <div class="w-full h-[120px] card flex  items-center card-side border border-red-900 bg-base-100 shadow-xl">
+                                    <figure class="size-[86px] bg-slate-200 rounded-[10px] ml-4">
+                                      <img class="size-[70px]  bg-slate-200 border border-dashed border-gray-500 p-3 "
+                                        src="./c2-assets/image 43.png"
+                                        alt="Onion" />
+                                    </figure>
+                                    <div class="card-body flex flex-col">
+                                        <div class="flex gap-1">
+                                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                            <h4 class="font-normal text-base">4.5</h4>
+                                        </div>
+                                      <h2 class="text-xl font-medium">Onion 1 KG</h2>
+                                      <h4 class="text-base font-medium">$39.99</h4>
+                                    
+                                      </div>
+                            </div>
+                            <!--  -->
+                            <div class="w-full h-[120px] card flex  items-center card-side border border-red-900 bg-base-100 shadow-xl">
+                                <figure class="size-[86px] bg-slate-200 rounded-[10px] ml-4">
+                                    <img class="size-[70px]  bg-slate-200 border border-dashed border-gray-500 p-3 "
+                                    src="./c2-assets/image 43.png"
+                                    alt="Onion" />
+                                </figure>
+                                <div class="card-body flex flex-col">
+                                    <div class="flex gap-1">
+                                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                        <h4 class="font-normal text-base">4.5</h4>
                                     </div>
-                                  
-                            <!-- other -->
-                            
+                                    <h2 class="text-xl font-medium">Onion 1 KG</h2>
+                                    <h4 class="text-base font-medium">$39.99</h4>
+                                
+                                    </div>
+                                </div>
+                            <!--  -->
+                            <div class="w-full h-[120px] card flex  items-center card-side border border-red-900 bg-base-100 shadow-xl">
+                                <figure class="size-[86px] bg-slate-200 rounded-[10px] ml-4">
+                                    <img class="size-[70px]  bg-slate-200 border border-dashed border-gray-500 p-3 "
+                                    src="./c2-assets/image 43.png"
+                                    alt="Onion" />
+                                </figure>
+                                <div class="card-body flex flex-col">
+                                    <div class="flex gap-1">
+                                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                        <h4 class="font-normal text-base">4.5</h4>
+                                    </div>
+                                    <h2 class="text-xl font-medium">Onion 1 KG</h2>
+                                    <h4 class="text-base font-medium">$39.99</h4>
+                                
+                                    </div>
+                                </div>
+                            <!--  -->
+                            <div class="w-full h-[120px] card flex  items-center card-side border border-red-900 bg-base-100 shadow-xl">
+                                <figure class="size-[86px] bg-slate-200 rounded-[10px] ml-4">
+                                    <img class="size-[70px]  bg-slate-200 border border-dashed border-gray-500 p-3 "
+                                    src="./c2-assets/image 43.png"
+                                    alt="Onion" />
+                                </figure>
+                                <div class="card-body flex flex-col">
+                                    <div class="flex gap-1">
+                                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                        <h4 class="font-normal text-base">4.5</h4>
+                                    </div>
+                                    <h2 class="text-xl font-medium">Onion 1 KG</h2>
+                                    <h4 class="text-base font-medium">$39.99</h4>
+                                
+                                    </div>
+                                </div>
+                            <!--  -->
+                            <div class="w-full h-[120px] card flex  items-center card-side border border-red-900 bg-base-100 shadow-xl">
+                                <figure class="size-[86px] bg-slate-200 rounded-[10px] ml-4">
+                                    <img class="size-[70px]  bg-slate-200 border border-dashed border-gray-500 p-3 "
+                                    src="./c2-assets/image 43.png"
+                                    alt="Onion" />
+                                </figure>
+                                <div class="card-body flex flex-col">
+                                    <div class="flex gap-1">
+                                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                        <h4 class="font-normal text-base">4.5</h4>
+                                    </div>
+                                    <h2 class="text-xl font-medium">Onion 1 KG</h2>
+                                    <h4 class="text-base font-medium">$39.99</h4>
+                                
+                                    </div>
+                                </div>
+                            <!--  -->
+                            <div class="w-full h-[120px] card flex  items-center card-side border border-red-900 bg-base-100 shadow-xl">
+                                    <figure class="size-[86px] bg-slate-200 rounded-[10px] ml-4">
+                                        <img class="size-[70px]  bg-slate-200 border border-dashed border-gray-500 p-3 "
+                                        src="./c2-assets/image 43.png"
+                                        alt="Onion" />
+                                    </figure>
+                                    <div class="card-body flex flex-col">
+                                        <div class="flex gap-1">
+                                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                            <h4 class="font-normal text-base">4.5</h4>
+                                        </div>
+                                        <h2 class="text-xl font-medium">Onion 1 KG</h2>
+                                        <h4 class="text-base font-medium">$39.99</h4>
+                                    
+                                        </div>
+                                </div>
                              </div>
                         </div>
                       </div>
                 </div>
          </section>
          
-         </div>
+         
          
          <!-- Arrival & Offers -->
-          <section class="lg:container mt-24 border border-violet-900 mx-auto">
+          <section class="hidden lg:container mt-24 border border-violet-900 mx-auto">
             <h1 class="mb-12 font-semibold text-4xl text-left text-[#179800]">Arrival & Offers</h1>
 
 
@@ -239,9 +379,9 @@
             
           </section>
         <!-- Grocery news section -->
-         <section class="relative lg:container h-[350px] rounded-3xl  border border-violet-900 mx-auto" >
+         <section class="hidden relative lg:container h-[350px] rounded-3xl  border border-violet-900 mx-auto" >
 
-            <div class="absolute top-10 flex flex-col lg:flex-row rounded-3xl bg-[#EFEBE3] mt-24  gap-32 items-center h-[450px] py-10 border border-violet-900 mx-auto">
+            <div class="absolute inset-36 top-10 flex flex-col lg:flex-row rounded-3xl bg-[#EFEBE3] mt-24  gap-32 items-center h-[450px] py-10 border border-violet-900 mx-auto">
                 <!-- image  -->
                 <div class=" border border-violet-900 my-14 mx-auto">
                     <img src="./c2-assets/vegetable-busket.png" alt="">
@@ -258,7 +398,7 @@
          </section>
 
     </main>
-    <footer class="footer h-full pt-[400px] bg-[#179800] text-neutral-content p-10">
+    <footer class="hidden footer h-full pt-[400px] bg-[#179800] text-neutral-content p-10">
         <div class="flex w-full mx-auto justify-between items-end border border-violet-900">
             <aside>
                 <img src="./c2-assets/logo-footer.png" alt="">
